@@ -1,0 +1,55 @@
+#!/bin/bash
+# jethi05
+# Initialize the options for turning display on or off
+options=("Display Off (isolate default.target)" "Display On (isolate graphical.target)")
+selected=0
+
+# Function to display the options
+display_options() {
+    clear
+    echo "Use 'j' and 'k' to navigate, 'Enter' to select"
+    for i in "${!options[@]}"; do
+        if [[ $i == $selected ]]; then
+            # Highlight the selected option
+            echo -e "\e[1;32m> ${options[i]}\e[0m"
+        else
+            # Display unselected option
+            echo "  ${options[i]}"
+        fi
+    done
+}
+
+# Main loop
+while true; do
+    display_options  # Display the menu
+
+    # Capture a single keypress
+    read -n1 -s key
+
+    case $key in
+        j) # Move selection down (cycle)
+            ((selected++))
+            if [[ $selected -ge ${#options[@]} ]]; then
+                selected=0
+            fi
+            ;;
+        k) # Move selection up (cycle)
+            ((selected--))
+            if [[ $selected -lt 0 ]]; then
+                selected=$((${#options[@]} - 1))
+            fi
+            ;;
+        "") # Enter key pressed
+            clear
+            if [[ $selected -eq 0 ]]; then
+                echo "Turning Display Off (isolating default.target)..."
+                sudo systemctl isolate default.target
+            elif [[ $selected -eq 1 ]]; then
+                echo "Turning Display On (isolating graphical.target)..."
+                sudo systemctl isolate graphical.target
+            fi
+            break
+            ;;
+    esac
+done
+
