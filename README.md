@@ -13,7 +13,7 @@ and in charging/plugged-in mode
 ![Picture of battery plugged in](pictures/battery_plugged.png)
 ## display
 at the folder display there are three bash scipts, the one I am using currently is the `display` one, but there are also my two old scripts `display_on` and `display_off` all of them work with `systemctl isolate`. To turn the display on you have to type `sudo systemctl isolate graphical.target` to just use the server version of your OS (so just a Shell and nothing more) you have to type `sudo systemctl isolate default.target` <br>
-![Picture of display](pcitures/display.png)
+![Picture of display](pictures/display.png)
 ### how do I use display?
 if you want to do it like you see in this progamm, you have to do a view steps: <br>
 - check default: `systemctl get-default` -> `grapical.target` should be the answer
