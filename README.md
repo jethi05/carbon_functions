@@ -7,4 +7,15 @@ carbon functions are simply things for my X1 Carbon laptop, which I wanted to bu
 These are all tools you tipicaly put in your `home/user/bin` so you can execute them from everywhere!
 ## battery
 battery is a simple tools which uses **Upower** to show you the battery Status and if it's plugged in or running from battey: <br>
-![Picture of battery](pictures/battery.png)
+in battery mode:
+![Picture of battery akku](pictures/battery_akku.png)<br>
+and in charging/plugged-in mode
+![Picture of battery plugged in](pictures/battery_plugged.png)
+## display
+at the folder display there are three bash scipts, the one I am using currently is the `display` one, but there are also my two old scripts `display_on` and `display_off` all of them work with `systemctl isolate`. To turn the display on you have to type `sudo systemctl isolate graphical.target` to just use the server version of your OS (so just a Shell and nothing more) you have to type `sudo systemctl isolate default.target` <br>
+![Picture of display](pcitures/display.png)
+### how do I use display?
+if you want to do it like you see in this progamm, you have to do a view steps: <br>
+- check default: `systemctl get-default` -> `grapical.target` should be the answer
+- Set it to NON-GUI `sudo systemctl set default.target multi-user.target`
+- reboot your system `sudo reboot` WANING you need to know your username ;)
