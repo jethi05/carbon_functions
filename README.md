@@ -6,5 +6,5 @@ carbon functions are simply things for my X1 Carbon laptop, which I wanted to bu
 # how do I use your tools?
 These are all tools you tipicaly put in your `home/user/bin` so you can execute them from everywhere!
 ## battery
-battery is a simple tools which uses **Upower** to show you the battery Status and if it's plugged in or running from battey: \\
+battery is a simple tools which uses **Upower** to show you the battery Status and if it's plugged in or running from battey: \
 Hello
