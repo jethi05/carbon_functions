@@ -18,4 +18,7 @@ at the folder display there are three bash scipts, the one I am using currently 
 if you want to do it like you see in this progamm, you have to do a view steps: <br>
 - check default: `systemctl get-default` -> `grapical.target` should be the answer
 - Set it to NON-GUI `sudo systemctl set default.target multi-user.target`
-- reboot your system `sudo reboot` WANING you need to know your username ;)
+- reboot your system `sudo reboot` WANING you need to know your username ;)a
+## Wi-fi
+Wi-fi is an small Bash script, which can connect mi Laptop to an network over Bash!
+So I need less and less GUIs in my life.
