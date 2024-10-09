@@ -26,6 +26,9 @@ toggle_wifi() {
 airplane_mode() {
     nmcli radio all off
     echo "Airplane mode activated (all radios off)."
+    echo "       __|__"
+    echo "--@--@--(_)--@--@--"
+
 }
 
 # Function to connect to a new Wi-Fi network with a password prompt
