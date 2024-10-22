@@ -1,6 +1,0 @@
-# Shows you all available wifi networks
-nmcli dev wifi list
-# list of your known networks
-nmcli connection show
-# shows you the connection right now
-nmcli connection show --active | grep wifi
