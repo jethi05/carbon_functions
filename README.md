@@ -30,5 +30,5 @@ you can choose between:
 - and all the networks which you have connected to in the past and available right now (here the black blurred one)
 
 you can also go to other, where you can see new Networks. If you press Enter, you can see the following things:
-![picture of wifi connection](pictures/wifi_connect.png)
+![picture of wifi connection](pictures/wifi_connect.png) <br>
 in the connect Menu, you can choose between these things! Congrats, now you don't need a GUI gor that anymore
