@@ -21,8 +21,13 @@ if you want to do it like you see in this progamm, you have to do a view steps: 
 - Set it to NON-GUI `sudo systemctl set default.target multi-user.target`
 - reboot your system `sudo reboot` WANING you need to know your username ;)a
 ## Wi-fi
-Wi-fi is an small Bash script, which can connect mi Laptop to an network over Bash!
-It is not finished yet, because I want to make it more beautiful, but it works....
-So I need less and less GUIs in my life.<br>
+Wi-fi is an small Bash script, which can connect my Laptop to an network over Bash!
+If you start the Script, you see something like that:
 ![Picture of wifi overview](pictures/wifi_overview.png)<br>
+you can choose between:
+- airplane mode
+- wifi off
+- and all the networks which you have connected to in the past and available right now (here the black blurred one
+you can also go to other, where you can see new Networks. If you press Enter, you can see the following things:
 ![picture of wifi connection](pictures/wifi_connect.png)
+in the connect Menu, you can choose between these things! Congrats, now you don't need a GUI gor that anymore
