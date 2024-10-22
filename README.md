@@ -3,6 +3,7 @@ carbon functions are simply things for my X1 Carbon laptop, which I wanted to bu
 # Whats in here?
 - battery
 - display
+- wifi
 # how do I use your tools?
 These are all tools you tipicaly put in your `home/user/bin` so you can execute them from everywhere!
 ## battery
@@ -21,4 +22,7 @@ if you want to do it like you see in this progamm, you have to do a view steps: 
 - reboot your system `sudo reboot` WANING you need to know your username ;)a
 ## Wi-fi
 Wi-fi is an small Bash script, which can connect mi Laptop to an network over Bash!
+It is not finished yet, because I want to make it more beautiful, but it works....
 So I need less and less GUIs in my life.
+![Picture of wifi overview](pictures/wifi_overview.png)
+![picture of wifi connection](pictures/wifi_connect.png)
