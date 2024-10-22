@@ -23,6 +23,6 @@ if you want to do it like you see in this progamm, you have to do a view steps: 
 ## Wi-fi
 Wi-fi is an small Bash script, which can connect mi Laptop to an network over Bash!
 It is not finished yet, because I want to make it more beautiful, but it works....
-So I need less and less GUIs in my life.
-![Picture of wifi overview](pictures/wifi_overview.png)
+So I need less and less GUIs in my life.<br>
+![Picture of wifi overview](pictures/wifi_overview.png)<br>
 ![picture of wifi connection](pictures/wifi_connect.png)
